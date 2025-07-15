@@ -2,7 +2,7 @@
 
 def call(Map config = [:]) {
     pipeline {
-        agent { label config.agent ?: 'any' }
+        agent { label config.agent ?: 'Agent7060' }
 
         environment {
             IMAGE_NAME = config.imageName ?: 'techwithyogesh/frontend'
