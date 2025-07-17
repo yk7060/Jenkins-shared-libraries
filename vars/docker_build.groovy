@@ -1,3 +1,3 @@
-def call(String imageName) {
-    sh "docker build -t ${imageName}"
+def call(String imageName, String contextDir = '.') {
+    sh "docker build -t ${imageName} ${contextDir}"
 }
